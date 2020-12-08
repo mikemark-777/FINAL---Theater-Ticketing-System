@@ -1,7 +1,7 @@
 # FINAL---Theater-Ticketing-System
 Final Project [ FINISHED ]
 
-Final Project in Web Systems Technology & Integrative Programming
+Project in Web Systems Technology & Integrative Programming
 
 Team Members:
 
