@@ -100,6 +100,7 @@ nav {
     text-align: center;
 }
 .details {
+    position: relative;
     padding: 30px;
 }
 
@@ -190,21 +191,22 @@ input[type=text], select, textarea {
 
 /*--------------------------------------  Design in Footer  --------------------------------------------------------------*/
 
-
-
 .footer-box {
     height: 250px;
     background-color: rgb(4, 40, 63);
 }
 
-.details {
+
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 100px;
     color: white;
-    display: flex;
-    text-align: center;
 }
 
-.copyright , .logout {
-    flex: 1;
+.uname {
+    color: rgb(236, 130, 0);
 }
 
 .end {
