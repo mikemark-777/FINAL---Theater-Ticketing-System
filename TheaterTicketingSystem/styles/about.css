@@ -121,21 +121,23 @@ h1 {
 
 /*--------------------------------------  Design in Footer  --------------------------------------------------------------*/
 
+
 .footer-box {
     height: 250px;
     background-color: rgb(4, 40, 63);
 }
 
-.details {
-    position: relative;
-    left: 250px;
-    color: white;
-    display: flex;
 
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 130px;
+    color: white;
 }
 
-.copyright , .logout {
-    flex: 1;
+.uname {
+    color: rgb(236, 130, 0);
 }
 
 .end {
