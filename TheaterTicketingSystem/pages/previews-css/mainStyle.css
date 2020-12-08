@@ -1,0 +1,298 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    height: 1200px;
+}
+
+/*------------------------------  Design in Header  --------------------------------------------------------------*/
+header {
+    color: white;
+    display: flex;
+    margin: auto;
+    height: 140px;
+    align-items: center;
+    background-color: rgb(4, 40, 63);
+}
+
+.logo-img {
+    height: 140px;
+}
+
+.logo-phrase {
+    color: rgb(224, 191, 0);
+}
+
+.logo {
+    flex: 2;
+}
+nav {
+    flex: 2;
+}
+
+.signUp-btn{
+    flex: 1;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    right: 45px;
+    border:none;
+    border-radius: 40px;
+    background-color: rgb(0, 162, 255);
+}
+
+.signUp-btn:hover{
+    height: 40px;
+    color: white;
+}
+
+.logo , nav , .signUp {
+    display: flex;
+    align-items: center;
+}
+.btn:hover {
+    height: 40px;
+    background-color: rgb(0, 155, 245);
+    color: white;
+}
+.btn {
+    font-family: calibri;
+    font-size: 15px;
+    color:black;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*------------------------------  Design in Body / Content  --------------------------------------------------------------*/
+
+.content {  
+    height: 2200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.movie-preview {
+    height: 520px;
+    width: 1349px;
+    position: relative;
+    padding: 30px;
+    background-color: black;
+}
+
+#movies-btn {
+    color: white;
+    height: 40px;
+    width: 120px;
+    background-color: rgb(105, 11, 194);
+}
+
+.yt-vid {
+    position: relative;
+    left: 230px;
+}
+.booth {
+    text-align: center;
+}
+
+.mov-title {
+    width: 250px;
+    text-align: center;
+}
+
+.description h1 {
+    color: red;
+}
+
+.description {
+    margin: 20px;
+}
+
+.tbooth-pic {
+    height: 350px;
+}
+.ticket-booth {
+    display: flex;
+    padding: 20px;
+    margin: 20px 0px 0px 50px;
+    height: 450px;
+    width: 1250px;
+}
+
+.movie-pic {
+    height:450px;
+	width: 700px;
+    margin: 0px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgb(0, 0, 0), -0px -0px 0px rgb(255, 255, 255);
+}
+
+.starring {
+    position: relative;
+    top: -22px;
+}
+
+.userInput {
+    padding: 10px;
+    margin-top: 20px;
+    height: 165px;
+    width: 450px;
+}
+
+.numberOfTickets {
+    padding-left: 5px;
+    font-size: 15px;
+    width: 45px;
+    height: 20px;
+}
+
+.fill-up {
+    height: 105px;
+    width: 450px;
+    padding: 10px;
+    position: relative;
+    right: 10px;
+}
+
+.reserve-seat-btn {
+    font-family: calibri;
+    font-size: 15px;
+    color:black;
+    height: 30px;
+    width: 430px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    background-color: rgb(245, 171, 136);
+}
+
+.reserve-seat-btn:hover {
+    color: white;
+    background-color: rgb(0, 162, 255);
+}
+
+.reserve-seats-panel {
+    height: 660px;
+    width: 1300px;
+    margin: 25px;
+    border-radius: 20px;
+    background-color:rgb(4, 40, 63);
+}
+
+.seat-proper {
+    position: absolute;
+    margin-top: 100px;
+    left: 300px;
+}
+
+.seat-proper h1 {
+    position: relative;
+    top: -50px;
+   text-align: center;
+   color: rgb(0, 162, 255);;
+}
+
+.seat-proper label {
+    color: white;
+    font-family: calibri;
+    position: relative;
+    top: -70px;
+    left: 120px;
+}
+
+.seats {
+    height: 35px;
+    width: 35px;
+    border-style: none;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.seats:hover {
+    background-color: rgb(0, 250, 33);
+}
+
+.aisle {
+    color:rgb(4, 40, 63); 
+}
+
+.legend {
+    font-family: calibri;
+    color: white;
+    display: flex;
+    position: relative;
+    left: 85px;
+    top: 25px;
+}
+
+.taken-seats, .your-seats, .vacant-seats {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    height: 15px;
+    width: 15px;
+}
+
+.legend-items {
+    flex: 1;
+}
+
+.taken-seats {
+    background-color: red;
+}
+
+.your-seats {
+    background-color: green;
+}
+
+.vacant-seats {
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-payment {
+    position: relative;
+    top: 80px;
+    left: 265px;
+    height: 35px;
+    width: 250px;
+    border-style: none;
+    border-radius: 10px;
+    background-color:rgb(245, 171, 136);
+}
+
+.btn-payment:hover {
+    color: white;
+    background-color: rgb(0, 162, 255);
+}
+
+#taken {
+    color: white;
+    background-color: red;
+}
+/*--------------------------------------  Design in Footer  --------------------------------------------------------------*/
+
+.footer-box {
+    height: 250px;
+    background-color: rgb(4, 40, 63);
+}
+
+.details {
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+.copyright , .logout {
+    flex: 1;
+}
+
+.end {
+    height: 20px;
+    background-color: rgb(133, 130, 0);
+}

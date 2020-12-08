@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="shortcut icon" href="../pics/website-icon.ico" type="image/x-icon">
+    <title>TicketVerse | Home</title>
+</head>
+<body onload="getUserData()">
+<!-----------------------------------------------------  HEADER ----------------------------------------------------->
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img class="logo-img" src="../pics/final-logo.png" alt="logo"></a>
+            <div class="logo-text">
+                 <h1>TicketVerse</h1>
+                 <p class="logo-phrase">You're one click away!</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <a href="../pages/home.html"><button class="btn"  id="home-btn">Home</button></a>
+                <a href="../pages/about.html"><button class="btn">About</button></a>
+                <a href="../pages/movies.html"><button class="btn">Movies</button></a>
+                <a href="../pages/contact.html"><button class="btn">Contact Us</button></a>
+            </ul>
+        </nav>
+        <div class="signup">
+            <a href="/pages/under_construction/sign-up.html"><button class="signUp-btn">Sign Up</button></a>
+        </div>
+    </header>
+<!--------------------------------------------------  CONTENT / BODY  ------------------------------------------------->
+<div class="Slideshow" style="max-width:1000px">
+    <img class="mySlides" src="../pics/Theatre.jpg" style="width:1349px; height: 500px">
+    <img class="mySlides" src="../pics/pikachu.jpg" style="width:1349px; height: 500px">
+    <img class="mySlides" src="../pics/inside.jpg" style="width:1349px; height: 500px">
+    <img class="mySlides" src="../pics/john.jpg" style="width:1349px; height: 500px">
+    <img class="mySlides" src="../pics/mortal.jpg" style="width:1349px; height: 500px">
+    <img class="mySlides" src="../pics/nev.jpg" style="width:1349px; height: 500px">
+    <img class="mySlides" src="../pics/spider.jpg" style="width:1349px; height: 500px">
+    <img class="mySlides" src="../pics/nun.png" style="width:1349px; height: 500px">
+  </div>
+  
+  <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); 
+        }
+  </script>
+          <div class="content">
+            <div class="centered">
+                <h1>NOW SHOWING</h1>
+            </div>
+  
+           <div class="Pix-text">
+             <h2>Upcoming Shows</h2>
+     
+            <table class="Table1">
+                <tr>
+                    <td><a href="../pages/previews-html/1 - avatar.html"><img class="movies" src="../pics/avatar.jpg" alt="Avatar"></a></td>
+                    <td><a href="../pages/previews-html/3 - detective-pikachu.html"><img class="movies" src="../pics/detective-pikachu.jpg" alt="Pikachu"></a></td>
+                    <td><a href="../pages/previews-html/2 - insideout.html"><img class="movies" src="../pics/inside-out.jpg" alt="Inside Out"></a></td>
+                    <td><a href="../pages/previews-html/4 - john-wick.html"><img class="movies" src="../pics/john-wick.jpeg" alt="John Wick"></a></td>
+                    <td><a href="../pages/previews-html/5 - mortal-engines.html"><img class="movies" src="../pics/mortal-engines.jpg" alt="Mortal Engines"></a></td>
+                    <td><a href="../pages/previews-html/6 - nevernot-loveyou.html"><img class="movies" src="../pics/nevernot-loveyou.jpg" alt="Never Not"></a></td>
+                    <td><a href="../pages/previews-html/7 - spiderman.html"><img class="movies" src="../pics/spiderman.jpg" alt="Spiderman"></a></td>
+                    <td><a href="../pages/previews-html/8 - the-nun.html"><img class="movies" src="../pics/the-nun.jpg" alt="The Nun"></a></td>
+                </tr>
+            </table>
+       
+         <div class="promo">
+            <hr class="hanger">
+            <img class="promo-img" src="../pics/promo.jpg" alt="Promo"></a>
+        <div class="Remark">
+  
+  
+              <div class="Phrase">
+                  <img class="ticket-img" src="../pics/ticket.png" alt="Ticket"></a>
+                  <p>Don't be late</p>
+                  <h1 class="phrase">Grab your tickets now!</h1></br></br>
+              </div>
+  
+             <div class="para">
+                  <div class="promo">
+                      <h1>Promo</h1><br />
+                      <p>Watch the latest blockbuster movies<br />
+                        of all time, but the fun doesn't stop<br />
+                         there.TicketVerse would provide you<br />
+                        big discounts and promos when booking<br /> 
+                        your tickets online. Enjoy our great<br />
+                        offers and rewards at TicketVerse!</p>
+  
+                  </div>
+                  <div class="ticket">
+                      <h1>Ticket</h1></br>
+                      <p>Adventure, romance, comedy, and drama <br />
+                         are just the beginning of awesome night <br />
+                         at the cinema. Get your tickets for the <br />
+                         latest movie showtimes and top movies <br />
+                         out this week plus the special movie <br />
+                         events in theatres. </p>
+  
+                  </div>
+                  <div class="whatsnew">
+                      <h1>What's New</h1><br />
+                      <p>We are thrilled to welcome you to our <br />
+                         brand new online home. We’ve taken <br />
+                         best features from all of the different<br />  
+                         websites and social media channels to <br />
+                         provide you with the ultimate theatre <br />
+                         experience all in one place!  </p>
+                  </div>
+             </div>
+            </div>
+        </div>
+      </div>
+  </div>
+     
+<!-----------------------------------------------------  FOOTER  ----------------------------------------------------->
+<script type="text/javascript" src="/scripts/queryUserData.js"></script>
+
+<footer>
+
+    <div class="footer-box">
+    </br></br></br> </br>
+        <div class="details">
+            <div class="copyright">
+                <p>Copyright 2020-2021 | TicketVerse | All rights Reserved.</p>
+            </div>
+            <div class="logout">
+                <p>User: </p>
+                 <p id="userName"></p> 
+               <a href="/scripts/logout.php"><button class="btn-logout">Logout</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        
+    </div>
+</footer>
+
+</body>
+</html>

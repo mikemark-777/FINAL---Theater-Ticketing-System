@@ -1,0 +1,15 @@
+body {
+    margin-left: 500px;
+    padding: 0px 0px 0px 100px;
+}
+
+.img {
+    position: relative;
+    right: 90px;
+}
+
+.text {
+    position: relative;
+    right: 300px;
+    text-align: center;
+}

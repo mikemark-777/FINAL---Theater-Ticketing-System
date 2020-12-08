@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/contact.css">
+	<link rel="shortcut icon" href="../pics/website-icon.ico" type="image/x-icon">
+    <title>Contact Us</title>
+	
+	<style>
+	</style>
+</head>
+<body onload="getUserData()">
+<!-----------------------------------------------------  HEADER ----------------------------------------------------->
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img class="logo-img" src="../pics/final-logo.png" alt="logo"></a>
+            <div class="logo-text">
+                 <h1>TicketVerse</h1>
+                 <p class="logo-phrase">You're one click away!</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+				<a href="../pages/home.html"><button class="btn">Home</button></a>
+                <a href="../pages/about.html"><button class="btn">About</button></a>
+                <a href="../pages/movies.html"><button class="btn">Movies</button></a>
+                <a href="../pages/contact.html"><button class="btn" id="contactus-btn">Contact Us</button></a>
+            </ul>
+            </ul>
+        </nav>
+        <div class="signup">
+            <a href="/pages/under_construction/sign-up.html"><button class="signUp-btn">Sign Up</button></a>
+        </div>
+    </header>
+<!--------------------------------------------------  CONTENT / BODY  ------------------------------------------------->
+    <div class="content">
+		<div class="image-box">
+			<img class="image" src="../pics/TicketVerse.jpg" alt="image">
+			<div class="reminder">
+				<br/><br/><h3>To our dear users</h3><br/>
+				<p>If you have queries, feel free<br/> 
+				to send to us your question.<br/> We
+				are happy to entertain you.</p>
+			</div>
+		</div><br/><br/>
+        <table class="contact-det">
+			<tr>
+				<td style="height: 400px;width: 200px">
+					<div class="leaveMessage">
+						<form action="contactus.php" method="post">
+							<table style="border: collapse;border-collapse: separate; border-spacing: 120px 10px;">
+							<h1 class="mess">Leave Us A Message</h1><br/><br/>
+								<tr>
+									<td>First Name<br/>
+										<input type="text" name="fname" value=""><br />
+									</td>
+									<td>Last Name<br/>
+										<input type="text" name="lname" value=""><br>
+									</td>
+								</tr>
+								<tr>
+									<td>Email<br/>
+										<input type="text" name="email" value=""><br>
+									</td>
+									<td>Phone<br/>
+										<input type="text" name="phone" value=""><br>
+									</td>
+								</tr>
+								<tr>
+									<td>Message<br/>
+										<input class="message" type="text" name="phone" value=""><br/>
+									</td>
+								</tr>	
+								
+							</table>
+							<input class="submit-btn" type="submit" value="Submit">
+						</form>
+					</div>
+				</td>
+				<td style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ),url('../pics/movie.jpeg');height:100px;width:800px; background-position: center; background-size: cover;">
+					<div class="details">
+						<h2 style="color:white;font-size:50px;">Location<br /></h2>
+						<hr style="height:2px;width:200px;border-width:0;color:gray;background-color:yellow"><br />
+						<p style="color:white;font-family:calibri;font-size:20px;">10th dream Ave.</p>
+						<p style="color:white;font-family:calibri;">Dream City</p>
+						<h2 style="color:white;font-size:50px;">Email &<br />Contact<br /></h2>
+						<hr style="height:2px;width:200px;border-width:0;color:gray;background-color:yellow"><br />
+						<p style="color:white;font-family:calibri;font-size:20px;">ticketverse@gmail.com</p>
+						<p style="color:white;font-family:calibri;">P 09123456789 &#9900 F 0378889078</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+		</div>
+    </div>
+	
+<!-----------------------------------------------------  FOOTER  ----------------------------------------------------->
+<script type="text/javascript" src="/scripts/queryUserData.js"></script>
+
+<footer>
+
+    <div class="footer-box">
+    </br></br></br> </br>
+        <div class="details">
+            <div class="copyright">
+                <p>Copyright 2020-2021 | TicketVerse | All rights Reserved.</p>
+            </div>
+            <div class="logout">
+                <p>User: </p>
+                 <p id="userName"></p> 
+               <a href="/scripts/logout.php"><button class="btn-logout">Logout</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        
+    </div>
+</footer>
+
+</body>
+</html>

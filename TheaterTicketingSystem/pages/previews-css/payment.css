@@ -1,0 +1,146 @@
+@media print {
+
+body * {
+    visibility: hidden;
+}
+
+.ticket-print , .ticket-print * {
+    visibility: visible;
+}
+
+.ticket-print {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+}
+
+body {
+    width: 1100px;
+}
+
+.payment-proper {
+    position: relative;
+    left: 180px;
+    display: flex;
+}
+
+.payment-txt {
+    text-align: center;
+    margin-left: 180px;
+    font-size: 50px;
+    color: rgb(134, 42, 0);
+    font-family: calibri;
+}
+
+.payment-btns {
+    position: relative;
+    left: 160px;
+}
+
+.payment-btns .pay-via {
+   position: relative;
+   left: 50px;
+}
+
+.btn-gcash {
+    width: 50px;
+}
+
+/*------------------- Ticket Printing --------------------------*/
+.titleText {
+    font-size: 50px;
+    position: relative;
+    left: -10px;
+}
+
+.titleLogo {
+    position: relative;
+    left: 165px;
+    display: flex;
+    width: 880px;
+    margin: 15px;
+    color: white;
+    background-color: rgb(4, 40, 63);
+}
+.logo {
+	width: 150px;
+}
+.ticket-print .details {
+    position: relative;
+    top: -30px;
+    left: 190px;
+}
+
+.details {
+     width: 1000px;;
+}
+h4 , 
+h3 , p {
+    font-family: calibri;
+    font-size: 25px;
+}
+
+.qr-code {
+    position: relative;
+    top: -225px;
+    left: 650px;
+    width: 250px;
+    padding: 5px;
+}
+
+.qr {
+    width:200px;
+}
+
+.txt {
+    position: relative;
+    top: 45px;
+    left: 220px;
+}
+
+.divider {
+    position: relative;
+    left: -70px;
+    height: 50px;
+    width: 880px ;
+    background-color: rgb(4, 40, 63);
+}
+
+.footer {
+    position: relative;
+    top: -180px;
+}
+
+.refnum {
+    float: right;
+    position: relative;
+    right: 130px;
+    display: flex;
+}
+
+#refNum {
+    position: relative;
+}
+
+.btn-backToHome {
+    position: relative;
+    top: 15px;
+}
+
+.btn-print , .btn-backToHome{
+    position: relative;
+    height: 35px;
+    width: 400px;
+    border-style: none;
+    border-radius: 5px;
+    left: 450px;
+    color: black;
+    background-color:  rgb(139, 120, 8);
+}
+
+.btn-print:hover , .btn-backToHome:hover{
+    background-color: rgb(0, 155, 245);
+    color: white;
+}

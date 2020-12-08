@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    height: 1200px;
+}
+
+/*------------------------------  Design in Header  --------------------------------------------------------------*/
+header {
+    color: white;
+    display: flex;
+    margin: auto;
+    height: 140px;
+    align-items: center;
+    background-color: rgb(4, 40, 63);
+}
+
+.logo-img {
+    height: 140px;
+}
+
+.logo-phrase {
+    color: rgb(224, 191, 0);
+}
+
+.logo {
+    flex: 2;
+}
+nav {
+    flex: 2;
+}
+
+.signUp-btn{
+    flex: 1;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    right: 45px;
+    border:none;
+    border-radius: 40px;
+    background-color: rgb(0, 162, 255);
+}
+
+.signUp-btn:hover{
+    height: 40px;
+    color: white;
+}
+
+.logo , nav , .signUp {
+    display: flex;
+    align-items: center;
+}
+.btn:hover {
+    height: 40px;
+    background-color: rgb(0, 155, 245);
+    color: white;
+}
+.btn {
+    font-family: calibri;
+    font-size: 15px;
+    color:black;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+#home-btn {
+    color: white;
+    height: 40px;
+    width: 120px;
+    background-color: rgb(105, 11, 194);
+}
+
+/*------------------------------  Design in Body / Content  --------------------------------------------------------------*/
+
+.content {  
+    
+    height: 1500px;
+     background-color: white;
+     display: flex;
+
+}
+.SLideshow:hover  {
+  width: 100%;
+  left: 0;
+}
+
+.theatre-img{
+    height: 500px;
+    width: 1200px;
+}
+.Pix-text {
+    text-align: center;
+    white-space: pre-wrap;
+    color: black;
+}
+.movies {
+    width: 150px;
+    height: 150px;
+    border-right: 10px ;
+    border-radius: 50%;
+    margin: 8px;
+    box-shadow: 2px 2px 5px solid rgb(0, 0, 0), -2px -2px 5px solid black;
+
+}
+.promo-img {
+    position: relative;
+    top: -24px;
+    margin-right: 100px;
+}
+.centered h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 100px;
+    color: white;
+    opacity: 0.3;
+    transform: translate(-50%, -50%);
+    font-family: calibri;
+}
+
+.ticket-img {
+    width: 200px;
+    height: 100px;
+}
+.Phrase {
+    font-size: 30px;
+    white-space: nowrap;
+    text-align: center;
+    background-color: white;
+    color: rgb(156, 149, 149);
+}
+.phrase {
+    font-size: 35px;
+    background-color: white;
+    color: rgb(156, 149, 149);
+    white-space: nowrap;
+}
+.Remarks {
+    text-align: center;
+    width: 440px;
+    background-color: white;
+    white-space: nowrap;
+}
+.Remark {
+    background-color: white;
+    color: black;
+    white-space: nowrap;
+    margin-top: 0px;
+}
+.para {
+    display: flex;
+}
+.promo , .tickets, .whatsnew {
+    flex: 1;
+}
+
+.hanger {
+    height: 20px;
+    background-color: black;
+}
+
+
+
+/*--------------------------------------  Design in Footer  --------------------------------------------------------------*/
+
+
+
+
+.footer-box {
+    height: 250px;
+    background-color: rgb(4, 40, 63);
+}
+
+.details {
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+.copyright , .logout {
+    flex: 1;
+}
+
+.end {
+    height: 20px;
+    background-color: rgb(133, 130, 0);
+}

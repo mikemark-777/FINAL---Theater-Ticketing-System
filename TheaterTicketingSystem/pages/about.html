@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="shortcut icon" href="../pics/website-icon.ico" type="image/x-icon">
+    <title>TicketVerse | About</title>
+</head>
+<body onload="getUserData()">
+<!-----------------------------------------------------  HEADER ----------------------------------------------------->
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img class="logo-img" src="../pics/final-logo.png" alt="logo"></a>
+            <div class="logo-text">
+                 <h1>TicketVerse</h1>
+                 <p class="logo-phrase">You're one click away!</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <a href="../pages/home.html"><button class="btn">Home</button></a>
+                <a href="../pages/about.html"><button class="btn" id="about-btn">About</button></a>
+                <a href="../pages/movies.html"><button class="btn">Movies</button></a>
+                <a href="../pages/contact.html"><button class="btn">Contact Us</button></a>
+            </ul>
+        </nav>
+        <div class="signup">
+            <a href="/pages/under_construction/sign-up.html"><button class="signUp-btn">Sign Up</button></a>
+        </div>
+    </header>
+<!--------------------------------------------------  CONTENT / BODY  ------------------------------------------------->
+   
+
+ <div class="content">
+
+  <div class="about">
+       <div  class="about-img"><img src="../pics/bg.jpg" alt="Norway" style="width: 100%;"></div>
+  <div class="about-txt"> 
+    <h1>About TicketVerse</h1>
+    <p>TicketVerse is an online ticket booking system on your site which will make it easier for <br />
+       you to buy and reserve movie tickets. A website that provide the customers facility to book <br />
+       tickets for a movie online and to gather information about the movies and theaters.</p>
+    <br /> 
+     <h1>User</h1>
+      <p>Customer needs to register at the site to book tickets to the movie. Users can manage <br />
+         reserve ticket online, avail promos online and be updated on the upcoming movies.</p>
+       <br /> 
+     <h1>Our Team</h1>
+      <p>TicketVerse is a user-friendly for customers, the management and for the administrators.<br>
+         Our team created a user-friendly ticketing system for an easier access to watch the <br />
+         movies they want in just one click.</p>
+  </div>
+  </div>
+</div>
+        
+<!-----------------------------------------------------  FOOTER  ----------------------------------------------------->
+<script type="text/javascript" src="/scripts/queryUserData.js"></script>
+
+<footer>
+
+    <div class="footer-box">
+    </br></br></br> </br>
+        <div class="details">
+            <div class="copyright">
+                <p>Copyright 2020-2021 | TicketVerse | All rights Reserved.</p>
+            </div>
+            <div class="logout">
+                <p>User: </p>
+                 <p id="userName"></p> 
+               <a href="/scripts/logout.php"><button class="btn-logout">Logout</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        
+    </div>
+</footer>
+
+</body>
+</html>

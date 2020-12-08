@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="../previews-css/payment.css">
+    <link rel="shortcut icon" href="../../pics/website-icon.ico" type="image/x-icon">
+    <script type="text/javascript">
+		function getData() {
+			var movieTitle= localStorage.getItem("title");
+            var movieDate= localStorage.getItem("date");
+            var mall= localStorage.getItem("mall");
+            var user= localStorage.getItem("user");
+            var personCount= localStorage.getItem("personCount");
+            var totalPayment= localStorage.getItem("totalPayment");
+            var refNum = localStorage.getItem("totalPayment");
+
+            document.getElementById("title").innerHTML = movieTitle;
+			document.getElementById("date").innerHTML = movieDate;
+            document.getElementById("mall").innerHTML = mall;
+			document.getElementById("personCount").innerHTML = personCount;
+            document.getElementById("customer").innerHTML = user;
+            document.getElementById("amount").innerHTML = "Php " + totalPayment + ".00";
+            document.getElementById("pay").innerHTML = " Php " + totalPayment + ".00";
+            document.getElementById("refNum").innerHTML = ("1548-44554-7454" + refNum   );
+            
+		}
+	</script>
+</head>
+<body onload="getData()">
+    
+   <div class="payment">
+       <h1 class="payment-txt">Online | Payment</h1>
+      
+       <div class="payment-btns">
+        <h4 class="pay-via">Pay via:</h4>
+        <table>
+            <tr>
+                <td><a href="https://www.mastercard.com.ph/en-ph.html"><img src="../preview-pics/btn-1-mastercard.png" alt=""></a></td>
+                <td><a href="https://www.paypal.com/ph/home"><img src="../preview-pics/btn-2-paypal.png" alt=""></a></td>
+                <td><a href="https://www.gcash.com/"><img src="../preview-pics/btn-3-gcash.png" alt=""></a></td>
+            </tr>
+        </table>
+    </div>
+        <div class="payment-proper">
+            <h4>Total :</h4><h4 id="pay"></h4></br>
+        </div>
+        <div class="ticket-print">
+            <div class="titleLogo">
+                <img class="logo" src="../../pics/final-logo.png">
+                <h3 class="titleText">TicketVerse</h3>
+                <p class="txt">O  f  f  i  c  i  a  l | T  i  c  k  e  t</p>
+            </div>
+
+           <div class="details">
+                <table>
+                    <tr>
+                        <td><h3>Movie:</h3></td>
+                        <td><p id="title"></p></td>
+                        <td><h3>Purchaser:</h3></td>
+                        <td><p id="customer"></p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><h3>Date:</h3></td>
+                        <td><p id="date"></p></td>
+                        <td><h3>Admitted: </h3></td>
+                        <td><p id="personCount"></p></td>
+                       
+                    </tr>
+                    <tr>
+                        <td><h3>Mall:</h3></td>
+                        <td><p id="mall"></p></td>
+                        <td><h3>Total Amount:</h3></td>
+                        <td><p id="amount"></p></td>
+                    </tr>
+                </table>
+                <div class="qr-code">
+                    <img class="qr" src="../preview-pics/qr-code.jpg" alt="">
+                </div>
+               <div class="footer">
+                    <hr class="divider">
+                    <div class="reminder">  
+                        <p><b>Reminder:</b> The Validity of this Ticket is within the Date of the Movie. You can present</br>
+                        this ticket to any branch of your Mall of preference. The number of people allowed for </br>this ticket
+                        is the one dictated on the "Admitted" part of the ticket.</p>
+                    </div>
+
+                    <div class="refnum">
+                        <p>Reference Number :</p>
+                        <p id="refNum"></p>
+                    </div>
+               </div>
+           </div>
+            
+        </div>
+
+
+
+        <button class="btn-print" onclick="window.print()">Print Ticket</button>
+       <a href="../home.html"><button class="btn-backToHome">Back to Home</button></br></br></br></a>
+
+   </div>
+
+</body>
+</html>
+

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../previews-css/mainStyle.css">
+    <link rel="shortcut icon" href="../../pics/website-icon.ico" type="image/x-icon">
+    <title>Movies | Never Not Love You</title>
+</head>
+<body onclick="getUserData()">
+<!-----------------------------------------------------  HEADER ----------------------------------------------------->
+    <header>
+        <div class="logo">
+            <a href="../../index.html"><img class="logo-img" src="../preview-pics/final-logo.png" alt="logo"></a>
+            <div class="logo-text">
+                 <h1>TicketVerse</h1>
+                 <p class="logo-phrase">You're one click away!</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <a href="../home.html"><button class="btn">Home</button></a>
+                <a href="../about.html"><button class="btn">About</button></a>
+                <a href="../pages/movies.html"><button class="btn" id="movies-btn">Movies</button></a>
+                <a href="../contact.html"><button class="btn">Contact Us</button></a>
+            </ul>
+        </nav>
+        <div class="signup">
+            <a href="../under_construction/sign-up.html"><button class="signUp-btn">Sign Up</button></a>
+        </div>
+    </header>
+<!--------------------------------------------------  CONTENT / BODY  ------------------------------------------------->
+    <div class="content">
+        <div class="movie-preview">
+            <iframe class="yt-vid" width="800" height="450" src="https://www.youtube.com/embed/c7UKL4zg5KM?autoplay=1&mute=1" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+        <div class="booth">
+                <img class="tbooth-pic" src="../preview-pics/ticketbooth.png" alt="tbooth">
+        </div>
+        <div class="ticket-booth">
+            <div class="image">
+                <img class="movie-pic" src="../preview-pics/nevernot-loveyou.jpg" alt="nevernot-loveyou">
+            </div>
+            <div class="description">  
+                <table>
+                    <th>
+                        <div class="mov-title">
+                            <h1>NNLY</h1>
+                        </div>
+                    </th>
+                    <tr>
+                        <td>
+                            <h5>Directed By:</h5>
+                        </td>
+                        <td>
+                            <P>Antoinette Jadaone</P>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>Produced By:</h5>
+                        </td>
+                        <td>
+                            <P>Vic del Rosario Jr.</P>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>Written By:</h5>
+                        </td>
+                        <td>
+                            <P>Antoinette Jadaone</P>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 class="starring">Starring:</h5>
+                        </td>
+                        <td>
+                            <P>James Reid, Nadine Lustre</P>
+                        </td>
+                    </tr>
+                </table>
+               <div class="userInput">
+                     <p><b>PRICE: Php 250.00 (per Ticket)</b></p></br>
+                     <div class="fill-up">
+                        <form action="">
+                            <label>Ticket Quantity: </label><input class="numberOfTickets" type="number" id="numberOfTickets"></br>
+                            <label>Mall : </label>
+                            <select name="" id="mall">
+                                <option >Choose your Mall</option>
+                                <option value="Robinson's Place">Robinson's Place</option>
+                                <option value="SM Supermalls">SM Supermalls</option>
+                            </select></br>
+                        </form> 
+                        <a href="#navigate-to-reserve-seats"><button onclick="saveUserInput()" class="reserve-seat-btn">Go to Reserve Seats</button></a>
+                     </div>
+               </div>
+            </div>
+        </div></br></br></br> </br></br></br>
+        <a name="navigate-to-reserve-seats"><div class="reserve-seats-panel"></a>
+          <div class="seat-proper">
+            <label>Please Select Seat according to the Quantity of Tickets you Admitted.</label>
+            <h1> - - SCREEN - - </h1>
+                    <table>
+                        <tr>
+                            <td><button id="taken"  class="seats">A1</button></td>
+                            <td><button id="taken"  class="seats">A2</button></td>
+                            <td><button id="a3"  class="seats">A3</button></td>
+                            <td><button id="a4"  class="seats">A4</button></td>
+                            <td><button id="a5"  class="seats">A5</button></td>
+                            <td><button id="a6"  class="seats">A6</button></td>
+                            <td><button id="a7"  class="seats">A7</button></td>
+                            <td><button id="a8"  class="seats">A8</button></td>
+                            <td class="aisle">------</td>
+                            <td><button id="a9"   class="seats">A9</button></td>
+                            <td><button id="a10"  class="seats">A10</button></td>
+                            <td><button id="taken"  class="seats">A11</button></td>
+                            <td><button id="taken"  class="seats">A12</button></td>
+                            <td><button id="taken"  class="seats">A13</button></td>
+                            <td><button id="a14"  class="seats">A14</button></td>
+                            <td><button id="a15"  class="seats">A15</button></td>
+                            <td><button id="a16"  class="seats">A16</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="b1"  class="seats">B1</button></td>
+                            <td><button id="b2"  class="seats">B2</button></td>
+                            <td><button id="b3"  class="seats">B3</button></td>
+                            <td><button id="taken"  class="seats">B4</button></td>
+                            <td><button id="taken"  class="seats">B5</button></td>
+                            <td><button id="taken"  class="seats">B6</button></td>
+                            <td><button id="b7"  class="seats">B7</button></td>
+                            <td><button id="b8"  class="seats">B8</button></td>
+                            <td class="aisle">------</td>
+                            <td><button id="b9"  class="seats">B9</button></td>
+                            <td><button id="taken" class="seats">B10</button></td>
+                            <td><button id="b11" class="seats">B11</button></td>
+                            <td><button id="b12" class="seats">B12</button></td>
+                            <td><button id="b13" class="seats">B13</button></td>
+                            <td><button id="b14" class="seats">B14</button></td>
+                            <td><button id="taken" class="seats">B15</button></td>
+                            <td><button id="b16" class="seats">B16</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="c1"  class="seats">C1</button></td>
+                            <td><button id="c2"  class="seats">C2</button></td>
+                            <td><button id="c3"  class="seats">C3</button></td>
+                            <td><button id="c4"  class="seats">C4</button></td>
+                            <td><button id="c5"  class="seats">C5</button></td>
+                            <td><button id="c6"  class="seats">C6</button></td>
+                            <td><button id="c7"  class="seats">C7</button></td>
+                            <td><button id="c8"  class="seats">C8</button></td>
+                            <td class="aisle">------</td>
+                            <td><button id="c9"  class="seats">C9</button></td>
+                            <td><button id="taken" class="seats">C10</button></td>
+                            <td><button id="taken" class="seats">C11</button></td>
+                            <td><button id="c12" class="seats">C12</button></td>
+                            <td><button id="c13" class="seats">C13</button></td>
+                            <td><button id="c14" class="seats">C14</button></td>
+                            <td><button id="c15" class="seats">C15</button></td>
+                            <td><button id="c16" class="seats">C16</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="taken"  class="seats">D1</button></td>
+                            <td><button id="d2"  class="seats">D2</button></td>
+                            <td><button id="d3"  class="seats">D3</button></td>
+                            <td><button id="taken"  class="seats">D4</button></td>
+                            <td><button id="d5"  class="seats">D5</button></td>
+                            <td><button id="d6"  class="seats">D6</button></td>
+                            <td><button id="d7"  class="seats">D7</button></td>
+                            <td><button id="d8"  class="seats">D8</button></td>
+                            <td class="aisle">------</td>
+                            <td><button id="d9"  class="seats">D9</button></td>
+                            <td><button id="d10" class="seats">D10</button></td>
+                            <td><button id="d11" class="seats">D11</button></td>
+                            <td><button id="d12" class="seats">D12</button></td>
+                            <td><button id="d13" class="seats">D13</button></td>
+                            <td><button id="d14" class="seats">D14</button></td>
+                            <td><button id="d15" class="seats">D15</button></td>
+                            <td><button id="d16" class="seats">D16</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="e1" class="seats">E1</button></td>
+                            <td><button id="e2" class="seats">E2</button></td>
+                            <td><button id="e3" class="seats">E3</button></td>
+                            <td><button id="e4" class="seats">E4</button></td>
+                            <td><button id="e5" class="seats">E5</button></td>
+                            <td><button id="taken" class="seats">E6</button></td>
+                            <td><button id="taken" class="seats">E7</button></td>
+                            <td><button id="e8" class="seats">E8</button></td>
+                            <td class="aisle">------</td>
+                            <td><button id="taken"  class="seats">E9</button></td>
+                            <td><button id="e10" class="seats">E10</button></td>
+                            <td><button id="e11" class="seats">E11</button></td>
+                            <td><button id="e12" class="seats">E12</button></td>
+                            <td><button id="e13" class="seats">E13</button></td>
+                            <td><button id="e14" class="seats">E14</button></td>
+                            <td><button id="e15" class="seats">E15</button></td>
+                            <td><button id="taken" class="seats">E16</button></td>
+                        </tr>
+                        <tr>
+                            <td><button  id="taken"  class="seats">F1</button></td>
+                            <td><button  id="f2"  class="seats">F2</button></td>
+                            <td><button  id="f3"  class="seats">F3</button></td>
+                            <td><button  id="f4"  class="seats">F4</button></td>
+                            <td><button  id="f5"  class="seats">F5</button></td>
+                            <td><button  id="f6"  class="seats">F6</button></td>
+                            <td><button  id="taken"  class="seats">F7</button></td>
+                            <td><button  id="f8"  class="seats">F8</button></td>
+                            <td class="aisle">------</td>
+                            <td><button  id="f9"  class="seats">F9</button></td>
+                            <td><button  id="f10" class="seats">F10</button></td>
+                            <td><button  id="f11" class="seats">F11</button></td>
+                            <td><button  id="f12" class="seats">F12</button></td>
+                            <td><button  id="f13" class="seats">F13</button></td>
+                            <td><button  id="taken" class="seats">F14</button></td>
+                            <td><button  id="taken" class="seats">F15</button></td>
+                            <td><button  id="taken" class="seats">F16</button></td>
+                        </tr>
+                    </table>
+
+                    <div class="legend">
+                        <div class="legend-items"><div class="taken-seats"></div> <p>Taken Seats</p></div>
+                        <div class="legend-items"><div class="your-seats"></div> <p>Your Seat(s)</p></div>
+                        <div class="legend-items"><div class="vacant-seats"></div> <p>Vacant Seats</p></div>
+                    </div>
+                   
+                    <button class="btn-payment" onclick="proceedToPayment()">Proceed to Payment</button>
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript" >
+
+        function proceedToPayment() {
+            window.location.href = 'payment.html';
+        }
+
+        function saveUserInput() {
+            var title = 'Never Not Love You';
+            var price = 250;
+            var numberOfTickets = document.getElementById('numberOfTickets').value;
+            var mall = document.getElementById('mall').value;
+            var date = "December 4 - 18, 2020";
+
+            var totalPayment = price * numberOfTickets;
+
+            localStorage.setItem("title", title);
+            localStorage.setItem("mall", mall);
+            localStorage.setItem("totalPayment", totalPayment);
+            localStorage.setItem("date", date);
+            localStorage.setItem("personCount", numberOfTickets);
+        }
+    </script>
+
+    <script src="../preview-js/seat-mechanism.js"></script>
+<!-----------------------------------------------------  FOOTER  ----------------------------------------------------->
+<script type="text/javascript" src="/scripts/queryUserData.js"></script>
+
+<footer>
+
+    <div class="footer-box">
+    </br></br></br> </br>
+        <div class="details">
+            <div class="copyright">
+                <p>Copyright 2020-2021 | TicketVerse | All rights Reserved.</p>
+            </div>
+            <div class="logout">
+                <p>User: </p>
+                 <p id="userName"></p> 
+               <a href="/scripts/logout.php"><button class="btn-logout">Logout</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        
+    </div>
+</footer>
+
+</body>
+</html>

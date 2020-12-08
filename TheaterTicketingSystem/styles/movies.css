@@ -1,0 +1,244 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    height: 100px;
+}
+
+/*------------------------------  Design in Header  --------------------------------------------------------------*/
+header {
+    color: white;
+    display: flex;
+    margin: auto;
+    height: 140px;
+    align-items: center;
+    background-color: rgb(4, 40, 63);
+}
+
+.logo-img {
+    height: 140px;
+}
+
+.logo-phrase {
+    color: rgb(224, 191, 0);
+}
+
+.logo {
+    flex: 2;
+}
+nav {
+    flex: 2;
+}
+
+.signUp-btn{
+    flex: 1;
+    height: 30px;
+    width: 100px;
+    position: relative;
+    right: 45px;
+    border:none;
+    border-radius: 40px;
+    background-color: rgb(0, 162, 255);
+}
+
+.signUp-btn:hover{
+    height: 40px;
+    color: white;
+}
+
+.logo , nav , .signUp {
+    display: flex;
+    align-items: center;
+}
+.btn:hover {
+    height: 40px;
+    color: white;
+    background-color: rgb(0, 155, 245);
+}
+.btn {
+    font-family: calibri;
+    font-size: 15px;
+    color:black;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+#movies-btn {
+    color: white;
+    height: 40px;
+    width: 120px;
+    background-color: rgb(105, 11, 194);
+}
+
+/*------------------------------  Design in Body / Content  --------------------------------------------------------------*/
+
+.content {  
+    position: relative;
+    left: 10px;
+    height: 1650px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nowShowing {
+    display: flex;
+}
+
+.description {
+    height: 430px;
+    width: 500px;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid rgb(102, 83, 0);
+}
+
+.ns-txt {
+    color: rgb(247, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+.ns-title {
+    font-size: 45px;
+    font-family: calibri;
+}
+
+.ns-date {
+    font-size: 20px;
+    font-family: calibri;
+}
+
+.buy-tickets:hover {
+    color: white;
+    background-color: rgb(0, 155, 245);
+}
+
+.buy-tickets {
+    font-family: calibri;
+    font-size: 15px;
+    color:black;
+    height: 40px;
+    width: 360px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 166, 0);
+}
+
+.movie-box {
+    padding: 20px;
+}
+
+.movie {
+    height:450px;
+    width: 350px;
+    margin: 20px;
+}
+
+.movies {
+    color: white;
+    height: 80px;
+    width: auto;
+    background-color:  rgb(4, 40, 63);
+    padding: 10px 10px 10px 30px;
+}
+
+.movies h1 {
+    font-size: 50px;
+}
+.pics-row1 {
+	height:400px;
+	width: 300px;
+	margin: 0px 20px 20px 20px;
+}
+
+.row1 {
+	margin-top: 30px;
+    float: right;
+   
+}
+
+.pics-row2 {
+	height:400px;
+	width: 300px;
+    margin: 0px 20px 20px 20px;
+}
+
+.row2 {
+	margin-top: 30px;
+	float: right;
+}
+
+.btn-buy:hover {
+    color: white;
+    background-color: rgb(0, 155, 245);
+}
+.btn-buy {
+    margin-top: 10px;
+    font-family: calibri;
+    font-size: 15px;
+    color:black;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(221, 245, 0);
+}
+
+.separator {
+    height: 5px;
+    background-color:  black
+}
+
+.sep {
+    position: relative;
+    top: 10px;
+    height: 80px;
+    width: auto;
+    background-color:  rgb(4, 40, 63);
+}
+.ticket {
+    position: relative;
+    top: 300px;
+    height: 200px;
+}
+
+.grab-box {
+    position: absolute;
+    top: 1700px;
+    left: 525px;
+}
+
+/*--------------------------------------  Design in Footer  --------------------------------------------------------------*/
+footer {
+    position: relative;
+    top: 600px;
+}
+
+
+
+.footer-box {
+    height: 250px;
+    background-color: rgb(4, 40, 63);
+}
+
+.details {
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+.copyright , .logout {
+    flex: 1;
+}
+
+.end {
+    height: 20px;
+    background-color: rgb(133, 130, 0);
+}

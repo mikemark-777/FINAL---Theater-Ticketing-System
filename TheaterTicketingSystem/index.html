@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./pics/website-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Welcome to TicketVerse!</title>
+    <script type="text/javascript" src="../scripts/verification.js"></script>
+</head>
+<body onload="getUserData()">
+<!-----------------------------------------------------  HEADER ----------------------------------------------------->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="logo-img" src="./pics/final-logo.png" alt="logo"></a>
+            <div class="logo-text">
+                 <h1>TicketVerse</h1>
+                 <p class="logo-phrase">You're one click away!</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <a href="#" onclick="verify()"><button  class="btn">Home</button></a>
+                <a href="#" onclick="verify()"><button  class="btn">About</button></a>
+                <a href="#" onclick="verify()"><button class="btn">Movies</button></a>
+                <a href="#" onclick="verify()"><button  class="btn">Contact Us</button></a>
+            </ul>
+        </nav>
+        <div class="signup">
+           <a href="/pages/under_construction/sign-up.html"><button class="signUp-btn">Sign Up</button></a>
+        </div>
+    </header>
+<!--------------------------------------------------  CONTENT / BODY  ------------------------------------------------->
+    <div class="content">
+        <div class="message">
+            <div class="intro">
+                <h1>TicketVerse</h1></br>
+                <p><b>Check the latest happenings in the Movie</br>
+                   World,  Buy tickets, Enjoy your movies later </br>
+                   together with your family with just one click!</b>
+                </p>
+                <button onclick="verify()" class="btn-buy"><b>Buy Tickets Now!</b></button>
+            </div>
+        </div>
+        <div class="login-panel">
+            <div class="login">
+                <form action="./scripts/login.php" method="get">
+                    <h1 class="login-txt">Login</h1></br></br>
+                    <input name="username" class="username" type="text" placeholder="Email or Phone Number"></br></br>
+                    <input name="password" class="password" type="password" placeholder="Password"></br></br></br> 
+                    <input class="login-btn" type="submit" value="Login"></br></br></br> 
+                   <a href="/pages/under_construction/sign-up.html"><p>Create an Account</p></a>
+                </form>
+            </div>
+        </div>
+
+        <div class="fam">
+            <img class="fam-img" src="./pics/family.png" alt="">
+        </div>
+        <div class="promote-1">
+            <h1>Watch Movies with</br> your Family</h1>
+        </div>
+
+        <div class="promote-2">
+            <h1>Or with your Friends </br> this Holiday Season!</h1>
+        </div>
+        <div class="friends">
+            <img class="friends-img" src="./pics/friends.png" alt="">
+        </div>
+
+        <div class="grab">
+            <img class="ticket" src="./pics/tickets.png" alt="tickets"></br></br>
+            <h1>Grab yours now!</h1></br>
+        </div>
+        
+    </div>
+<!-----------------------------------------------------  FOOTER  ----------------------------------------------------->
+    <script type="text/javascript" src="/scripts/queryUserData.js"></script>
+
+    <footer>
+   
+        <div class="footer-box">
+        </br></br></br> </br>
+            <div class="details">
+                <div class="copyright">
+                    <p>Copyright 2020-2021 | TicketVerse | All rights Reserved.</p>
+                </div>
+                <div class="logout">
+                    <p>User: </p>
+                     <p id="userName"></p> 
+                   <a href="/scripts/logout.php"><button class="btn-logout">Logout</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            
+        </div>
+    </footer>
+   
+</body>
+</html>
+
+
+
