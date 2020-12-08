@@ -221,21 +221,22 @@ footer {
     top: 600px;
 }
 
-
-
 .footer-box {
     height: 250px;
     background-color: rgb(4, 40, 63);
 }
 
-.details {
+
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 120px;
     color: white;
-    display: flex;
-    text-align: center;
 }
 
-.copyright , .logout {
-    flex: 1;
+.uname {
+    color: rgb(219, 136, 34);
 }
 
 .end {
