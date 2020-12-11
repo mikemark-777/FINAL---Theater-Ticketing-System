@@ -38,6 +38,7 @@
         </div>
         <div class="booth">
                 <img class="tbooth-pic" src="../preview-pics/ticketbooth.png" alt="tbooth">
+                <p>Before you click the "Book Ticket" button, please go to the bottom part and select your seats.</p>
         </div>
         <div class="ticket-booth">
             <div class="image">
@@ -47,55 +48,36 @@
                 <table>
                     <th>
                         <div class="mov-title">
-                            <h1>InsideOut</h1>
+                            <h1>InsideOut</h1></br>
                         </div>
                     </th>
                     <tr>
                         <td>
-                            <h5>Directed By:</h5>
-                        </td>
-                        <td>
-                            <P>Pete Docter</P>
+                            <h5>Directed By: Pete Docter</h5>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <h5>Produced By:</h5>
-                        </td>
-                        <td>
-                            <P>Jonas Rivera</P>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h5>Written By:</h5>
-                        </td>
-                        <td>
-                            <P>Pete Docter, Ronnie del Carmen</P>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h5 class="starring">Starring:</h5>
-                        </td>
-                        <td>
-                            <P>Amy Poehler, Phyllis Smith, Richard Kind, Lewis Black, Bill Hader</P>
+                            <h5>Date: December 9 - 20, 2020</h5>
                         </td>
                     </tr>
                 </table>
                <div class="userInput">
-                     <p><b>PRICE: Php 275.00 (per Ticket)</b></p></br>
+                     <p><b>PRICE: Php 275.00 (per Ticket)</b></p></br></br></br>
                      <div class="fill-up">
-                        <form action="">
-                            <label>Ticket Quantity: </label><input class="numberOfTickets" type="number" id="numberOfTickets"></br>
+                        <form action="/scripts/bookedTickets.php">
+                            <input type="text" value="InsideOut" name="title-db"></br>
+                            <label>Ticket Quantity: </label><input name="tnum-db" class="numberOfTickets" type="number" id="numberOfTickets"></br>
                             <label>Mall : </label>
-                            <select name="" id="mall">
+                            <select name="mall-db" id="mall">
                                 <option >Choose your Mall</option>
-                                <option value="Robinson's Place">Robinson's Place</option>
+                                <option value="Robinsons Place">Robinson's Place</option>
                                 <option value="SM Supermalls">SM Supermalls</option>
                             </select></br>
-                        </form> 
-                        <a href="#navigate-to-reserve-seats"><button onclick="saveUserInput()" class="reserve-seat-btn">Go to Reserve Seats</button></a>
+                            <label>Book Date: </label><input type="date" name="date-db" value="" onChange="setDate(this.value)">
+                            <a href="#navigate-to-reserve-seats"><button onclick="saveUserInput()" type="submit" class="reserve-seat-btn">Book Tickets</button></a>
+                        </form> </br></br>
+                       
                      </div>
                </div>
             </div>
@@ -226,15 +208,14 @@
                         <div class="legend-items"><div class="your-seats"></div> <p>Your Seat(s)</p></div>
                         <div class="legend-items"><div class="vacant-seats"></div> <p>Vacant Seats</p></div>
                     </div>
-                   
-                    <button class="btn-payment" onclick="proceedToPayment()">Proceed to Payment</button>
           </div>
         </div>
     </div>
     <script type="text/javascript" >
 
-        function proceedToPayment() {
-            window.location.href = 'payment.html';
+        var dateSaved;
+        function setDate(val) {
+            dateSaved = val;
         }
 
         function saveUserInput() {
@@ -242,15 +223,16 @@
             var price = 275;
             var numberOfTickets = document.getElementById('numberOfTickets').value;
             var mall = document.getElementById('mall').value;
-            var date = "December 9 - 20, 2020";
-
+            var date = dateSaved;
             var totalPayment = price * numberOfTickets;
+            var referenceNumber = "1548-44554-7454" + totalPayment;
 
             localStorage.setItem("title", title);
             localStorage.setItem("mall", mall);
             localStorage.setItem("totalPayment", totalPayment);
-            localStorage.setItem("date", date);
+            localStorage.setItem("date", dateSaved);
             localStorage.setItem("personCount", numberOfTickets);
+            localStorage.setItem("referenceNum", referenceNumber);
         }
     </script>
 
