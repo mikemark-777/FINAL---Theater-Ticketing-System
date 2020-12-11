@@ -38,6 +38,7 @@
         </div>
         <div class="booth">
                 <img class="tbooth-pic" src="../preview-pics/ticketbooth.png" alt="tbooth">
+                <p>Before you click the "Book Ticket" button, please go to the bottom part and select your seats.</p>
         </div>
         <div class="ticket-booth">
             <div class="image">
@@ -47,55 +48,36 @@
                 <table>
                     <th>
                         <div class="mov-title">
-                            <h1>DetectivePikachu</h1>
+                            <h1>DetectivePikachu</h1></br>
                         </div>
                     </th>
                     <tr>
                         <td>
-                            <h5>Directed By:</h5>
-                        </td>
-                        <td>
-                            <P>Rob Letterman</P>
+                            <h5>Directed By: Rob Letterman</h5>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <h5>Produced By:</h5>
-                        </td>
-                        <td>
-                            <P>Mary Parent, Cale Boyter</P>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h5>Written By:</h5>
-                        </td>
-                        <td>
-                            <P>Dan Hernandez</P>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h5 class="starring">Starring:</h5>
-                        </td>
-                        <td>
-                            <P>Reynan Reynolds, Justice Smith, Kathryn Newton, Suki Waterhouse, Omar Chapparo</P>
+                            <h5>Date: December 5 - 19, 2020</h5>
                         </td>
                     </tr>
                 </table>
                <div class="userInput">
-                     <p><b>PRICE: Php 250.00 (per Ticket)</b></p></br>
+                     <p><b>PRICE: Php 250.00 (per Ticket)</b></p></br></br></br>
                      <div class="fill-up">
-                        <form action="">
-                            <label>Ticket Quantity: </label><input class="numberOfTickets" type="number" id="numberOfTickets"></br>
+                        <form action="/scripts/bookedTickets.php">
+                            <input type="text" value="Detective Pikachu" name="title-db"></br>
+                            <label>Ticket Quantity: </label><input name="tnum-db" class="numberOfTickets" type="number" id="numberOfTickets"></br>
                             <label>Mall : </label>
-                            <select name="" id="mall">
+                            <select name="mall-db" id="mall">
                                 <option >Choose your Mall</option>
-                                <option value="Robinson's Place">Robinson's Place</option>
+                                <option value="Robinsons Place">Robinson's Place</option>
                                 <option value="SM Supermalls">SM Supermalls</option>
                             </select></br>
-                        </form> 
-                        <a href="#navigate-to-reserve-seats"><button onclick="saveUserInput()" class="reserve-seat-btn">Go to Reserve Seats</button></a>
+                            <label>Book Date: </label><input type="date" name="date-db" value="" onChange="setDate(this.value)">
+                             <a href="#navigate-to-reserve-seats"><button type="submit" onclick="saveUserInput()" class="reserve-seat-btn">Go to Reserve Seats</button></a>
+                        </form> </br></br>
+                       
                      </div>
                </div>
             </div>
@@ -226,8 +208,6 @@
                         <div class="legend-items"><div class="your-seats"></div> <p>Your Seat(s)</p></div>
                         <div class="legend-items"><div class="vacant-seats"></div> <p>Vacant Seats</p></div>
                     </div>
-                   
-                    <button class="btn-payment" onclick="proceedToPayment()">Proceed to Payment</button>
           </div>
         </div>
     </div>
@@ -237,20 +217,22 @@
             window.location.href = 'payment.html';
         }
 
+
         function saveUserInput() {
             var title = 'Detective Pikachu';
             var price = 250;
             var numberOfTickets = document.getElementById('numberOfTickets').value;
             var mall = document.getElementById('mall').value;
-            var date = "December 5 - 19, 2020";
-
+            var date = dateSaved;
             var totalPayment = price * numberOfTickets;
+            var referenceNumber = "1548-44554-7454" + totalPayment;
 
             localStorage.setItem("title", title);
             localStorage.setItem("mall", mall);
             localStorage.setItem("totalPayment", totalPayment);
-            localStorage.setItem("date", date);
+            localStorage.setItem("date", dateSaved);
             localStorage.setItem("personCount", numberOfTickets);
+            localStorage.setItem("referenceNum", referenceNumber);
         }
     </script>
 
